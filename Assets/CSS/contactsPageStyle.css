@@ -1,0 +1,161 @@
+.adressName, .Email, .heatingPhone1, .heatingPhone2{
+    display: flex;
+}
+
+.adress{
+    margin: 10px 0;
+}
+
+.contacts{
+    margin: 20px 50px;
+}
+
+.heatingContacts{
+    margin: 10px 0;
+}
+
+.contactsName > div{
+    width: max-content;
+}
+
+.contactsName{
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.heatingName{
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.delimiterUnderMap{
+    margin-top: -4px;
+}
+
+.contacts i{
+    padding-right: 10px;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width:881px) {
+    .feedback{
+        height: 400px;
+        width: 450px;
+        background-color: #fff;
+        position: absolute;
+        top: 290px;
+        right: 60px;
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .delimiterMobile{
+        display: none;
+    }
+
+    .inputI input{
+        width: 90%;
+        height: 30px;
+        padding: 0 5px;
+    }
+
+    .inputMessage textarea{
+        height: 60px;
+        width: 90%;
+        padding: 5px 5px;
+        resize: none;
+    }
+
+    .inputI p{
+        padding-top: 15px;
+    }
+    .feedbackDesc{
+        padding: 5px 5%;
+    }
+
+    .feedbackInputs{
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+
+    .feedbackName{
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: var(--primary-color);
+    }
+
+    .feedbackName p{
+        font-size: 1.5rem;
+        color:#fff; 
+    }
+}
+
+.confirmFeedback button{
+    height: 50px;
+    width: 40%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: none;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    margin: 22px 30%;
+    transition: 0.5s;
+}
+
+.confirmFeedback button:hover{
+    color: #fff;
+    background: var(--primary-color);
+}
+
+@media screen and (max-width:880px) {
+    .feedback{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contacts{
+        margin-left: 12%;
+    }
+
+    .feedbackDesc{
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .feedbackName{
+        margin-top: 10px;
+    }
+
+    .feedbackInputs{
+        width: 84%;
+        margin: 15px 8%;
+    }
+
+    .feedbackInputs p{
+        margin-top: 10px;
+    }
+
+    .feedbackInputs input, .feedbackInputs textarea{
+        width: 100%;
+        padding: 5px 5px;
+    }
+
+
+    .feedbackInputs textarea{
+        resize: none;
+    }
+
+    .confirmFeedback button{
+        margin-top: 3px;
+    }
+
+    .feedbackName{
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 1.75rem;
+        width: 74%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

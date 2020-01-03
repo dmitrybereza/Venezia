@@ -1,0 +1,167 @@
+:root {
+    --primary-color: rgb(21, 165, 163);
+    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --background-color:rgba(37, 150, 148, 0.4);
+    --menu-speed: 0.75s;
+  }
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.content{
+    margin-top:70px;
+}
+
+footer{
+    height: 160px;
+    display: flex;
+    background: var(--background-color);
+}
+
+.delimiter{
+    position: fixed;
+    top:55px;
+    width: 100%;
+}
+
+hr{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    height: 2px;
+}
+
+.footerPars{
+    display: flex;
+}
+
+.footerAbout{
+    color: #fff;
+}
+
+@media screen and (min-width:881px) and (max-width:1297px) {
+    
+    footer{
+        height: 170px;
+    }
+}
+
+@media screen and (min-width:881px) {
+
+    .footerSocials{
+        font-size: 2.5rem;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .footerSocials i{
+        margin-left: 10px;
+        transition: .7s;
+    }
+
+    .footerSocials i:hover{
+        transform: rotateY(180deg);
+    }
+
+    .footerSocialsName{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: var(--primary-color);
+    }
+
+    header{
+        width: 100%;
+        top:0;
+        z-index: 2;
+        height: 55px;
+        background-color: rgba(37, 150, 148, 0.8);
+        position: fixed;
+    } 
+    .footerContacts{
+        margin: 15px 15px;
+        margin-left: 7.5%;
+    }   
+
+    .footerContactsName{
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .footerPars{
+        color: #fff;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    .footerAbout{
+        margin: 15px auto; 
+    }
+    .footerAboutName{
+        color: var(--primary-color);
+        font-size: 1.5rem;   
+    }
+}
+
+@media screen and (max-width:880px) {
+    footer{
+        height: 100%;
+        display: block;
+    }
+    .delimiter hr{
+        display: none;
+    }
+
+    .desctopBr{
+        display: none;
+    }
+    .footerAboutName, .footerContactsName{
+        color: var(--primary-color);
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .footerAbout p{
+        text-align: justify;
+        margin: 0 10px;
+    }
+
+    .footerAboutName p{
+        text-align: center
+    }
+
+    .footerSocialsName{
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .footerSocialsName p{
+        text-align: center;
+    }
+
+    .footerPars{
+        color: #fff;
+        justify-content: center;
+        margin-top: 3px;
+    }
+
+    .footerPars p{
+        margin-left: 5px;
+    }
+
+    .footerSocials i{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        margin-left: 45%;
+    }
+}
