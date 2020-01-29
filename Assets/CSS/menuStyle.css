@@ -7,6 +7,8 @@
         width: max-content;
         position: fixed;
         z-index: 2;
+        display: flex;
+        line-height: 55px;
         top: 0;
         right: 100px;
     }
@@ -19,10 +21,33 @@
     .menu li{
         padding: 0 15px;
     }
+
+    .shopingCart i{
+      font-size: 1.25rem;
+    }
+
 }
 
 .menu-wrap{
   height: max-content;
+}
+
+.shopingCart{
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.badge{
+  background-color: red;
+  padding: 0.5px 3px;
+  font-size: 1rem;
+  margin-left: -13px;
+  top: 5px;
+  position: absolute;
+  line-height: 19px;
+  vertical-align: top;
+  border-radius: 50%;
 }
 
 .menu a{
@@ -33,8 +58,23 @@
     .menu-wrap {
         position: fixed;
         top: 0;
-        right: 65px;
+        right: 40px;
         z-index: 2;
+      }
+
+      .badge{
+        top:10px;
+        margin-left: -40px;
+        z-index: -1;
+      }
+
+      .shopingCart i{
+        position: absolute;
+        top: 18px;
+        font-size: 1.5rem;
+        z-index: -1;
+        right: 25px;
+        color: var(--primary-color)
       }
       
       .menu-wrap .toggler {

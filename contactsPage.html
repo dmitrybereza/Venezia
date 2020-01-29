@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Assets/CSS/menuStyle.css">
     <link rel="stylesheet" href="Assets/CSS/contactsPageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-     <title>Arctica</title>
+     <title>Venezia</title>
 </head>
 <body>
     <header>
@@ -20,13 +20,17 @@
                   <div>
                     <div>
                       <ul>
-                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Наша команда</a></li>
-                        <li><a href="contactsPage.html">Контакты</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contactsPage.html">Контакти</a></li>
                       </ul>
                     </div>
                   </div>
+                </div>
+                <div class="shopingCart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class='badge badge-warning' id='lblCartCount'> 0 </span>
                 </div>
             </div>
     </header>
@@ -37,34 +41,34 @@
         <div class="contacts">
             <div class="contactsName">
                 <div>
-                    <p>Контакты</p>
+                    <p>Контакти</p>
                     <hr>
                 </div>
             </div>
             <div class="adress">
-                <p>Наш офис находится по адресу:</p>
+                <p>Ми знаходимось за адресою:</p>
                 <div class="adressName">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>ул. Исполкомовская, 69</p>
+                    <p>вул. Стромцова(Вакуленчука), 1</p>
                 </div>
             </div>
             <div class="heatingContacts">
                 <div class="heatingName">
-                    <p>Арктика-Днепр</p>
+                    <p>Салон декору "Венецiя"</p>
                 </div>
                 <div class="Phones heatingPhones">
                     <div class="heatingPhone1">
                         <i class="fas fa-phone-alt"></i>
-                        <p>+38(000)0000000</p>
+                        <p>+38(068)680-70-34</p>
                     </div>
                     <div class="heatingPhone2">
                         <i class="fas fa-phone-alt"></i>
-                        <p>+38(000)0000000</p>
+                        <p>+38(095)764-86-76</p>
                     </div>
                 </div>
                 <div class="Email heatingEmail">
                     <i class="fas fa-envelope"></i>
-                    <p>example2@gmail.com</p>
+                    <p>veneziadnepr@gmail.com</p>
                 </div>
             </div>
         </div > 
@@ -72,7 +76,7 @@
             <hr>
         </div> 
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.197053458824!2d35.04533441566001!3d48.45274857924988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe327b41e65ab%3A0x5e852327b754bafc!2z0YPQuy4g0JjRgdC_0L7Qu9C60L7QvNC-0LLRgdC60LDRjywgNjksINCU0L3QuNC_0YDQviwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1578053967753!5m2!1sru!2sua" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.8547845789953!2d35.01901081565973!3d48.44012677924879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe340b86fec73%3A0x6f9179eaca86ae0!2z0LLRg9C70LjRhtGPINCb0LXQvtC90ZbQtNCwINCh0YLRgNC-0LzRhtC-0LLQsCwgMSwg0JTQvdGW0L_RgNC-zIEsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1580307031712!5m2!1sru!2sua"
             width="100%" 
             height="450" 
             frameborder="0" 
@@ -85,28 +89,28 @@
     </div>
     <div class="feedback">
         <div class="feedbackName">
-            <p>Свяжитесь с нами</p>
+            <p>Зв'яжiться з нами</p>
             <hr>
         </div>
         <div class="feedbackDesc">
-            <p>Остались вопросы? Задайте их нам:</p>
+            <p>Залишились питання? Задайте їх нам:</p>
         </div>
         <div class="feedbackInputs">
             <div class="inputI inputName">
-                <p>Как к Вам обращаться?</p>
-                <input type="text" placeholder="ФИО">
+                <p>Як до вас звертатись?</p>
+                <input type="text" placeholder="ФIО">
             </div>
             <div class="inputI inputEmail">
                 <p>Ваш e-mail:</p>
                 <input type="email" placeholder="Email">
             </div>
             <div class="inputI inputMessage">
-                <p>Ваш вопрос:</p>
-                <textarea placeholder="Сообщение" cols="30" rows="10"></textarea>
+                <p>Ваше питання:</p>
+                <textarea placeholder="Повiдомлення" cols="30" rows="10"></textarea>
             </div>
         </div>
         <div class="confirmFeedback">
-            <button>Отправить</button>
+            <button>Вiдправити</button>
         </div>
     </div>
     <div class="delimiterMobile">
@@ -115,40 +119,41 @@
     <footer>
         <div class="footerContacts">
             <div class="footerContactsName">
-                <p>Контакты</p>
+                <p>Контакти</p>
             </div>
             <div class="footerPars">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>ул. Исполкомовская, 69</p>
+                <p>вул. Стромцова, 1</p>
             </div>
             <div class="footerPars">
                 <i class="fas fa-phone-alt"></i>
-                <p>+38(000)0000000</p>
+                <p>+38(068)680-70-34</p>
             </div>
             <div class="footerPars">
                 <i class="fas fa-phone-alt"></i>
-                <p>+38(000)0000000</p>
+                <p>+38(095)764-86-76</p>
             </div>
             <div class="footerPars">
                 <i class="fas fa-envelope"></i>
-                <p>example2@gmail.com</p>
+                <p>veneziadnepr@gmail.com</p>
             </div>
         </div>
         <div class="footerAbout">
             <div class="footerAboutName">
-                <p>Про компанию</p>
+                <p>Про нас</p>
             </div>
             <div class="footerAboutInfo">
                 <p>
-                    
-                    Наша компания предоставляет большой асортимент отопительных систем<br class="desctopBr"> и систем кондиционирования, гарантируя качество и предоставляя официальную гарантию производителя.
+                    Салон декору Венецiя. Великий вибiр товарiв та гарантована якiсть.
                 </p>
             </div>
             <div class="footerSocials">
                 <div class="footerSocialsName">
-                    <p>Мы в социальный сетях</p>
+                    <p>Ми в соц. мережах:</p>
                 </div>
                 <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>

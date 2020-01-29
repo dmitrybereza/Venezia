@@ -37,6 +37,8 @@
     color: var(--primary-color);
 }
 
+
+
 @media screen and (min-width:881px) {
     .feedback{
         height: 400px;
@@ -100,6 +102,7 @@
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     margin: 22px 30%;
+    outline: none;
     transition: 0.5s;
 }
 
@@ -113,7 +116,15 @@
         height: 100%;
         width: 100%;
     }
+
+    .footerAboutInfo{
+        width: 100%;
+        margin: auto;
+    }
     
+    .footerAboutInfo p{
+        text-align: center;
+    }
     .contacts{
         margin-left: 12%;
     }
