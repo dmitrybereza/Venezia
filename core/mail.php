@@ -1,10 +1,10 @@
 <?php
 
-$json = file_get_contents('../goods.json');
+$json = file_get_contents('../plasters-limestone.json');
 $json = json_decode($json, true);
-$json2 = file_get_contents('../goods2.json');
+$json2 = file_get_contents('../varnish-limestone.json');
 $json2 = json_decode($json2, true);
-$json3 = file_get_contents('../goods3.json');
+$json3 = file_get_contents('../paints-limestone.json');
 $json3 = json_decode($json3, true);
 
 $message = '';
