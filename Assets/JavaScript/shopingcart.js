@@ -38,18 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function confirmOrder(){
-    var email = $('#eM  ail').val();
+    var email = $('#eMail').val();
 	var eFIO = $('#eFIO').val();
-	var eNUM = $('#phone').val();
+	var eNUM = $('#ePhone').val();
 	var eCity = $('#eCity').val();
-    var ePost = $('#ePost').val();
-    
-    if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
+	var ePost = $('#ePost').val();
+
+	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
 		$.post(
 			"core/mail.php",
 			{
 				"eFIO" : eFIO,
-				"email" : eMail,
+				"email" : email,
 				"eNUM" : eNUM,
 				"eCity" : eCity,
 				"ePost" : ePost,
@@ -59,7 +59,7 @@ function confirmOrder(){
 				if(data == 1){
 					var win = window.open('index.html','_self');
 					win.focus();
-                    localStorage.clear();
+					localStorage.clear();
                     Swal.fire({
                         icon: 'success',
                         title: 'Замовлення прийнято',
@@ -79,9 +79,9 @@ function confirmOrder(){
                       }) 
 				}
 			}
-        );
-    }
-    else{
+		);
+	}
+	else{
 		Swal.fire({
             icon: 'error',
             title: 'Заповнiть всi поля',
@@ -91,6 +91,7 @@ function confirmOrder(){
           }) 
 	}
 }
+
 
 $(document).ready(function() {
     $("#phone").mask("+38 (099) 99-99-999");
