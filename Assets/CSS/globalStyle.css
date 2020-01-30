@@ -41,19 +41,16 @@ hr{
     height: 2px;
 }
 
+.content{
+    min-height: 78vh;
+}
+
 .footerPars{
     display: flex;
 }
 
 .footerAbout{
     color: #fff;
-}
-
-@media screen and (min-width:881px) and (max-width:1297px) {
-    
-    footer{
-        height: 170px;
-    }
 }
 
 @media screen and (min-width:881px) {
@@ -149,6 +146,10 @@ hr{
         text-align: center;
     }
 
+    .footerSocials a{
+        display: inline-flex;
+        margin-left: 13%;
+    }
     .footerPars{
         color: #fff;
         justify-content: center;

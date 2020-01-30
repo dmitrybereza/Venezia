@@ -1,0 +1,118 @@
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+
+ .confirmOrderName{
+    background: var(--primary-color);
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+ }
+
+ .confirmOrderInputs > div{
+     margin-top: 10px;
+     margin-left: 30px;
+     margin-right: 30px;
+     margin-bottom: 10px;
+ }
+
+ .confirmOrderInputs > div input{
+     height: 30px;
+     width: 100%;
+     padding: 0 5px;
+ }
+
+ .confirmOrderButton button{
+    outline: none;
+    background: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 7px 14px;
+    cursor: pointer; 
+    width: 90%;
+    margin-left: 5%;
+    border: 3px solid var(--primary-color);
+    transition: .5s;
+ }
+
+ .confirmOrderButton button:hover{
+     background-color: var(--primary-color);
+     color: white;
+ }
+
+ .modal {  
+    opacity: 0;
+    visibility: hidden; 
+    width: 95%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: white;
+    cursor: pointer;
+ }
+ .content a {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #414b52;
+    margin: 10px;
+    color: #fff;
+    border-radius: 3px;
+ }
+
+ .modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+@media screen and (min-width:881px) {
+ .confirmOrderName{
+    font-size: 1.5rem;
+ }
+
+ .confirmOrderButton{
+     margin-top: 20px !important;
+    margin-bottom: 20px !important;
+ }
+}
+
+@media screen and (max-width:880px){
+    .confirmOrderName{
+        font-size: 1.3rem;
+    }
+
+    .confirmOrderButton button{
+        font-size: 1.1rem;
+        padding: 5px 5px;
+    }
+
+    .modal__cross{
+        top: 22px;
+    }
+}

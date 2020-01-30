@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/CSS/globalStyle.css">
-    <link rel="stylesheet" href="Assets/CSS/menuStyle.css">
-    <link rel="stylesheet" href="Assets/CSS/contactsPageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="Assets/CSS/globalStyle.css">
+    <link rel="stylesheet" href="Assets/CSS/menuStyle.css"> 
+    <link rel="stylesheet" href="Assets/CSS/shopingcart.css">
     <script src="Assets/JavaScript/globalScripts.js"></script>
-     <title>Venezia</title>
+    <title>Venezia</title>
 </head>
 <body>
     <header>
@@ -38,8 +39,9 @@
     <div class="delimiter">
         <hr>
     </div>
-    <div class="content">
-      </div>  
+    <div class="content"> 
+        <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
+    </div>
     <footer>
         <div class="footerContacts">
             <div class="footerContactsName">
@@ -81,5 +83,38 @@
             </div>
         </div>
     </footer>
-</body>
+    <div class="modal" data-modal="1">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"            
+        viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="confirmOrderName">
+            <p class="modal__title">Оформiть замовлення</p>
+        </div>
+        <div class="confirmOrderInputs">
+            <div>
+                <p>Введiть ФIО</p>
+                <input type="text"></div>
+            <div>
+                <p>Ваш e-mail</p>
+                <input type="email">
+            </div>
+            <div>
+                <p>Ваш номер телефону</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Ваше мiсто</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Вiддiлення Нової Пошти</p>
+                <input type="text">
+            </div>  
+            <div class="confirmOrderButton" onclick="confirmOrder()">
+                <button>Пiдтвердити замовлення</button>
+            </div>    
+        </div>
+     </div>
+     <div class="overlay js-overlay-modal" id="overlay-modal"></div>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </body>
 </html>
