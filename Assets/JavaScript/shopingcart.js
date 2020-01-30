@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function confirmOrder(){
-    var email = $('#email').val();
+    var email = $('#eMail').val();
 	var eFIO = $('#eFIO').val();
 	var eNUM = $('#phone').val();
 	var eCity = $('#eCity').val();
