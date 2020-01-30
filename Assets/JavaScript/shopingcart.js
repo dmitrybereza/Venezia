@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function confirmOrder(){
     var email = $('#email').val();
 	var eFIO = $('#eFIO').val();
-	var eNUM = $('#ePhone').val();
+	var eNUM = $('#phone').val();
 	var eCity = $('#eCity').val();
     var ePost = $('#ePost').val();
     
@@ -49,7 +49,7 @@ function confirmOrder(){
 			"core/mail.php",
 			{
 				"eFIO" : eFIO,
-				"email" : email,
+				"email" : eMail,
 				"eNUM" : eNUM,
 				"eCity" : eCity,
 				"ePost" : ePost,
