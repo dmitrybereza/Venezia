@@ -121,6 +121,10 @@
         width: 100%;
     }
 
+    .littleLogo img{
+        margin-top: -55px;
+    }
+
     .footerAboutInfo{
         width: 100%;
         margin: auto;
