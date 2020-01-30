@@ -92,22 +92,23 @@
         <div class="confirmOrderInputs">
             <div>
                 <p>Введiть ФIО</p>
-                <input type="text"></div>
+                <input type="text" id="eFIO">
+            </div>
             <div>
                 <p>Ваш e-mail</p>
-                <input type="email">
+                <input type="email" id="eMail">
             </div>
             <div>
                 <p>Ваш номер телефону</p>
-                <input type="text">
+                <input id="phone" type="tel" id="ePhone">
             </div>
             <div>
                 <p>Ваше мiсто</p>
-                <input type="text">
+                <input type="text" id="eCity">
             </div>
             <div>
                 <p>Вiддiлення Нової Пошти</p>
-                <input type="text">
+                <input type="text" id="ePost">
             </div>  
             <div class="confirmOrderButton" onclick="confirmOrder()">
                 <button>Пiдтвердити замовлення</button>
@@ -116,5 +117,8 @@
      </div>
      <div class="overlay js-overlay-modal" id="overlay-modal"></div>
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="Assets/JavaScript/jquery.maskedinput.js"></script>
+     <script src="Assets/JavaScript/shopingcart.js"></script>
     </body>
 </html>
