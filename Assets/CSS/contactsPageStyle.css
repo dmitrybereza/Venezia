@@ -32,6 +32,10 @@
     margin-top: -4px;
 }
 
+.content{
+    margin-top: 70px;
+}
+
 .contacts i{
     padding-right: 10px;
     color: var(--primary-color);

@@ -1,0 +1,27 @@
+.bigLogo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bigLogo{
+    height: 100vh;
+    background: url("../Images/back.jpg");
+}
+
+.content{
+    position: relative;
+    min-height: 70vh !important;
+}
+
+@media screen and (max-width:880px) {
+    .bigLogo{
+        height: 90vh;
+    }
+
+    .bigLogo img{
+        width: 22rem;
+    }
+}

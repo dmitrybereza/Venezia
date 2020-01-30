@@ -180,9 +180,9 @@
 
       .menu-wrap .menu > div {
         background: var(--overlay-color);
-        border-radius: 45%;
+        border-radius: 50%;
         width: 200vw;
-        height: 200vw;
+        height: 250vw;
         display: flex;
         flex: none;
         align-items: center;

@@ -7,13 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/CSS/globalStyle.css">
     <link rel="stylesheet" href="Assets/CSS/menuStyle.css">
-    <link rel="stylesheet" href="Assets/CSS/contactsPageStyle.css">
+    <link rel="stylesheet" href="Assets/CSS/mainPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script src="Assets/JavaScript/globalScripts.js"></script>
      <title>Venezia</title>
 </head>
-<body>
+<body onload="onload()">
     <header>
+        <div class="littleLogo desktopLogo">
+            <img src="Assets/Images/littlelogo.png" alt="">
+        </div>
+        <div class="littleLogo mobileLogo">
+            <img src="Assets/Images/littlelogoblue.png" alt="">
+        </div>
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
                 <div class="hamburger"><div class="menuButton"></div></div>
@@ -23,7 +29,7 @@
                       <ul>
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Магазин</a></li>
+                        <li><a href="shopPage.html">Магазин</a></li>
                         <li><a href="contactsPage.html">Контакти</a></li>
                       </ul>
                     </div>
@@ -38,8 +44,18 @@
     <div class="delimiter">
         <hr>
     </div>
+    <div class="bigLogo">
+            <img src="Assets/Images/biglogo.svg" alt="">
+        </div>
+        <div class="delimiterMobile">
+            <hr>
+        </div>  
     <div class="content">
-      </div>  
+        
+      </div>
+      <div class="delimiterMobile">
+        <hr>
+    </div>    
     <footer>
         <div class="footerContacts">
             <div class="footerContactsName">

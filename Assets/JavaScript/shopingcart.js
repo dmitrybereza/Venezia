@@ -1,5 +1,43 @@
 var card ={
 };
+var count = 0;
+
+function openInNewTab(url){
+	var win = window.open(url,'_self');
+	win.focus();
+}
+
+function onload(){
+	loadCard();
+	loadCount();
+}
+
+function loadCard(){
+	if(localStorage.getItem('card')){
+		card = JSON.parse(localStorage.getItem('card'));
+		showCard();
+	}
+	else{
+		out='';
+            out+='<div class="emptyCard">';
+            out+='<div>'
+            out+='<p>Кошик порожнiй</p>';
+            out+='<a href="shopPage.html">Перейти в магазин</a>'
+            out+='</div>';
+			out+='</div>';
+			$('.cardList').html(out);
+	}
+}
+
+function loadCount(){
+	if(localStorage.getItem('counter')){
+		count = localStorage.getItem('counter');
+		document.getElementById("lblCartCount").textContent = count;
+	}
+	else {
+		document.getElementById("lblCartCount").textContent = 0;
+	}
+}
 
 !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
 document.addEventListener('DOMContentLoaded', function() {
