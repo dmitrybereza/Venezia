@@ -11,6 +11,41 @@
     background: url("../Images/back.jpg");
 }
 
+.mainShop > div img{
+   width: 48%
+}
+
+.mainMenu{
+    height: 100%;
+    display: inline-flex;
+}
+
+.mainShop{
+    width: 50vw;
+    height: 100%;
+}
+
+.mainGallery > div img{
+    width: 113.3%;
+}
+
+.mainShop > div{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+}
+
+.mainGallery > div{
+    width: 50%;
+    position: absolute;
+    top: 57.1%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+}
+
+
 .content{
     position: relative;
     min-height: 70vh !important;
