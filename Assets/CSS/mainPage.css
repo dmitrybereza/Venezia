@@ -29,6 +29,18 @@
     width: 48%;
 }
 
+.arrowDown{
+    width: max-content;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    text-align: center;
+    transform: translate(-50%, 0px);
+    }
+
+
 .mainShop > div{
     width: 50%;
     position: absolute;
@@ -60,6 +72,14 @@
     .mainMenuItem > div img:hover{
         transform: scale(1.1);
     }
+
+    .arrowDown i{
+        transition: .5s;
+    }
+
+    .arrowDown:hover i{
+        transform: translateY(10px) scale(0.9);
+    }
 }
 
 @media screen and (max-width:880px) {
@@ -67,10 +87,13 @@
         height: 92vh;
     }
 
+    .arrowDown{
+        bottom:75px;
+    }
+
     .content{
         min-height: 110vh !important;
     }
-
     
     .mainGallery > div img{
         width: 101%;

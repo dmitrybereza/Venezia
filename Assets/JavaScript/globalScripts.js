@@ -3,6 +3,15 @@ function openInNewTab(url){
 	win.focus();
 }
 
+$("document").ready(function(){
+	$(".arrowDown").on('click',function(e){
+		e.preventDefault();
+		var top = $('#startmenu').offset().top;
+		$('html, body').animate({scrollTop:top}, 800)
+	  })
+});
+
+
 function feedbackFun(){
 	var email = $('#eMail').val();
 	var eFIO = $('#eFIO').val();
