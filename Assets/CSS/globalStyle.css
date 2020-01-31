@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #15a5a3;
+    --primary-color: rgb(21, 165, 163);
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --background-color:rgba(37, 150, 148, 0.4);
     --menu-speed: 0.75s;
