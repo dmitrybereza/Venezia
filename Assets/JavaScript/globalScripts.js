@@ -8,7 +8,7 @@ $("document").ready(function(){
 		e.preventDefault();
 		var top = $('#startmenu').offset().top;
 		$('html, body').animate({scrollTop:top}, 800)
-	  })
+	  }) 
 });
 
 
