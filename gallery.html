@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Libs/FancyBox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="Assets/CSS/globalStyle.css">
+    <link rel="stylesheet" href="Assets/CSS/menuStyle.css">
+    <link rel="stylesheet" href="Assets/CSS/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+     <title>Venezia</title>
+</head>
+<body onload="onload()">
+    <header>
+        <a href="index.html">
+            <div class="littleLogo desktopLogo">
+                <img src="Assets/Images/littlelogo.png" alt="">
+            </div>
+            <div class="littleLogo mobileLogo">
+                <img src="Assets/Images/littlelogoblue.png" alt="">
+            </div>
+        </a>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div class="menuButton"></div></div>
+                <div class="menu">
+                  <div>
+                    <div>
+                      <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="shopPage.html">Магазин</a></li>
+                        <li><a href="contactsPage.html">Контакти</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div onclick="openInNewTab('shopingcart.html')" class="shopingCart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+                </div>
+            </div>
+    </header>
+    <div class="delimiter">
+        <hr>
+    </div>
+    <div class="content">
+        <div class="galleryWrap">
+            <div class="gallery">
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/1.jpg"><img src="Assets/Images/Gallery/Thumbs/1.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/2.jpg"><img src="Assets/Images/Gallery/Thumbs/2.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/3.jpg"><img src="Assets/Images/Gallery/Thumbs/3.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/4.jpg"><img src="Assets/Images/Gallery/Thumbs/4.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/5.jpg"><img src="Assets/Images/Gallery/Thumbs/5.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/6.jpg"><img src="Assets/Images/Gallery/Thumbs/6.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/7.jpg"><img src="Assets/Images/Gallery/Thumbs/7.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/8.jpg"><img src="Assets/Images/Gallery/Thumbs/8.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/9.jpg"><img src="Assets/Images/Gallery/Thumbs/9.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/10.jpg"><img src="Assets/Images/Gallery/Thumbs/10.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/11.jpg"><img src="Assets/Images/Gallery/Thumbs/11.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/12.jpg"><img src="Assets/Images/Gallery/Thumbs/12.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/13.jpg"><img src="Assets/Images/Gallery/Thumbs/13.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/14.jpg"><img src="Assets/Images/Gallery/Thumbs/14.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/15.jpg"><img src="Assets/Images/Gallery/Thumbs/15.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/16.jpg"><img src="Assets/Images/Gallery/Thumbs/16.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/17.jpg"><img src="Assets/Images/Gallery/Thumbs/17.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/18.jpg"><img src="Assets/Images/Gallery/Thumbs/18.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/19.jpg"><img src="Assets/Images/Gallery/Thumbs/19.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/20.jpg"><img src="Assets/Images/Gallery/Thumbs/20.jpg"></a>
+                <a data-fancybox="gallery" href="Assets/Images/Gallery/FullSize/21.jpg"><img src="Assets/Images/Gallery/Thumbs/21.jpg"></a>
+            </div>
+        </div>                         
+      </div>  
+      <div class="delimiterMobile">
+        <hr>
+    </div>    
+    <footer>
+        <div class="footerContacts">
+            <div class="footerContactsName">
+                <p>Контакти</p>
+            </div>
+            <div class="footerPars">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>вул. Стромцова, 1</p>
+            </div>
+            <div class="footerPars">
+                <i class="fas fa-phone-alt"></i>
+                <p>+38(068)680-70-34</p>
+            </div>
+            <div class="footerPars">
+                <i class="fas fa-phone-alt"></i>
+                <p>+38(095)764-86-76</p>
+            </div>
+            <div class="footerPars">
+                <i class="fas fa-envelope"></i>
+                <p>veneziadnepr@gmail.com</p>
+            </div>
+        </div>
+        <div class="footerAbout">
+            <div class="footerAboutName">
+                <p>Про нас</p>
+            </div>
+            <div class="footerAboutInfo">
+                <p>
+                    Салон декору Венецiя. Великий вибiр товарiв та гарантована якiсть.
+                </p>
+            </div>
+            <div class="footerSocials">
+                <div class="footerSocialsName">
+                    <p>Ми в соц. мережах:</p>
+                </div>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="Assets/Libs/FancyBox/jquery.fancybox.min.js"></script>
+    <script src="Assets/JavaScript/globalScripts.js"></script>
+</body>
+</html>

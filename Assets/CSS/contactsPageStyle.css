@@ -42,6 +42,12 @@
 }
 
 
+.workTime{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+
 
 @media screen and (min-width:881px) {
     .feedback{
@@ -49,7 +55,7 @@
         width: 450px;
         background-color: #fff;
         position: absolute;
-        top: 290px;
+        top: 330px;
         right: 60px;
         z-index: 1;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);

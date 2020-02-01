@@ -1,0 +1,52 @@
+.gallery{
+    height: 100%;
+}
+
+@media screen and (min-width:881px){
+    .galleryWrap{
+        width: 90%;
+        position: absolute;
+        top: 10%;
+        left: 55%;
+        transform: translate(-50%, 0%);
+    }
+        .content{
+            min-height: 297vh;
+        }
+        
+        .gallery img{
+            height: 40vh;
+            width: 30%;
+            min-width: 350px;
+        }
+   
+}
+
+@media screen and (max-width:880px){
+    .galleryWrap{
+        width: 90%;
+        margin-top: 5%;
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .content{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .littleLogo img {
+        position: fixed;
+        margin-top: -55px;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+
+    .gallery a{
+        display: block;
+    }
+}
