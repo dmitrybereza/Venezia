@@ -6,6 +6,10 @@
         margin-top: 57px;
     }
     
+    .mobileDel{
+        display: none;
+    }
+
     .fabricators{
         overflow: hidden;
     }
@@ -81,6 +85,61 @@
 }
 
 @media screen and (max-width:880px){
+    .fabricators{
+        margin-top: 65px;
+    }
+
+    .littleLogo img {
+        margin-top: -50px;
+    }
+
+    .limestoneIcon{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .limestoneIcon img{
+        width: 90%;
+    }
+
+    .limestonePhoto{
+        display: none;
+    }
+
+    .content{
+        min-height: 80vh;
+    }
+
+    .limestoneButton{
+        width: 100%;
+        height: 7vh;
+        position: relative;
+        text-align: center;
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        margin-top: 20px;
+    }
+
+    .limestoneButton p{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        font-size: 1.2rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .limestonedescr{
+        margin-top: 20px;
+        text-align: center;
+    font-size: 1.2rem;
+    }
+
+    .limestone{
+        width: 90%;
+        margin-left: 5%;
+        overflow: hidden;
+    }
 
 }
 
