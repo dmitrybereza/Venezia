@@ -11,6 +11,10 @@ $("document").ready(function(){
 	  }) 
 });
 
+function onload(){
+
+}
+
 
 function feedbackFun(){
 	var email = $('#eMail').val();

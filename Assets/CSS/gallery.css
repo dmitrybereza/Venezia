@@ -22,6 +22,19 @@
    
 }
 
+@media screen and (min-width:881px) and (max-width:1193px){
+    .gallery img{
+        height: 50vh;
+        width: 45%;
+        min-width: 350px;
+    }
+
+    .content{
+        min-height: 570vh;
+    }
+
+}
+
 @media screen and (max-width:880px){
     .galleryWrap{
         width: 90%;

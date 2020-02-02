@@ -1,0 +1,92 @@
+@media screen and (min-width:881px){
+    .limestone{
+        width: 100%;
+        position: relative;
+        height: 75vh;
+        margin-top: 57px;
+    }
+    
+    .fabricators{
+        overflow: hidden;
+    }
+    
+    .content{
+        min-height: 75vh;
+    }
+    
+    .limestoneIcon{
+        position: absolute;
+        top: 5%;
+        left: 7%;
+        width: 100%;
+    }
+    
+    .limestoneIcon img{
+        width: 30%;
+    }
+    
+    .limestonePhoto{
+        position: absolute;
+        width: 25%;
+        left: 10%;
+        top: 30%;
+        border: 3px solid var(--primary-color);
+    }
+
+    .limestonePhoto img{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    
+    .limestonedescr{
+    border: 3px solid var(--primary-color);
+    width: 50%;
+        position: absolute;
+        right: 5%;
+        padding: 5px;
+        top: 5%;
+    }
+    
+    .limestoneButton{
+        width: 30%;
+        border: 3px solid var(--primary-color);
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        color: var(--primary-color);
+        text-align: center;
+        height: 10%;
+        transition: .5s;
+    }
+    
+    .limestonedescr p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .limestoneButton p{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        font-size: 1.2rem;
+        transform: translate(-50%, -50%);
+    }
+    
+    .limestoneButton:hover{
+        background: var(--primary-color);
+        color: white;
+    }
+}
+
+@media screen and (max-width:880px){
+
+}
+
+@media screen and (min-width:1590px){
+    .limestonedescr p{
+        font-size: 2.1rem;
+    }
+
+}
