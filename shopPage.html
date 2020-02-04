@@ -13,14 +13,16 @@
 </head>
 <body onload="onload()">
     <header>
-        <a href="index.html">
-            <div class="littleLogo desktopLogo">
+        <div class="littleLogo desktopLogo">
+            <a href="index.html">
                 <img src="Assets/Images/littlelogo.png" alt="">
-            </div>
-            <div class="littleLogo mobileLogo">
+            </a>
+        </div>
+        <div class="littleLogo mobileLogo">
+            <a href="index.html">
                 <img src="Assets/Images/littlelogoblue.png" alt="">
-            </div>
-        </a>
+            </a>
+        </div>
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
                 <div class="hamburger"><div class="menuButton"></div></div>
@@ -61,7 +63,7 @@
                     <p>Компанія розробляє, виробляє та постачає на ринок України високоякісні декоративні та оздоблювальні матеріали, емалі, лазурі, фарби, а також різноманітні хімічно-будівельні покриття. Про це свідчить надсучасна лабораторія та кваліфікована команда фахівців, за спиною яких уже є десятки розробок, які впроваджені в країнах Європи та Азії. Матеріали приготовлені на високоякісній сировині європейського виробництва, яку вони самі імпортують.
                     </p>
                 </div>
-                <a href="">
+                <a onclick="selectLimestone()" href="itemsPage.html">
                     <div class="limestoneButton">
                     <p>Перейти до товарiв</p>
                     </div>
@@ -113,6 +115,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="Assets/JavaScript/globalScripts.js"></script>
 </body>
 </html>

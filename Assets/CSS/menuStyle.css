@@ -42,7 +42,7 @@
   background-color: red;
   padding: 0.5px 3px;
   font-size: 1rem;
-  margin-left: -13px;
+  margin-left: -10px;
   top: 5px;
   position: absolute;
   line-height: 19px;
@@ -64,7 +64,7 @@
 
       .badge{
         top:10px;
-        margin-left: -40px;
+        margin-left: -37px;
         z-index: -1;
       }
 

@@ -10,18 +10,24 @@
     <link rel="stylesheet" href="Assets/CSS/globalStyle.css">
     <link rel="stylesheet" href="Assets/CSS/menuStyle.css"> 
     <link rel="stylesheet" href="Assets/CSS/shopingcart.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="Assets/JavaScript/jquery.maskedinput.js"></script>
+     <script src="Assets/JavaScript/shopingcart.js"></script>
     <title>Venezia</title>
 </head>
 <body onload="onload()">
     <header>
-        <a href="index.html">
-            <div class="littleLogo desktopLogo">
+        <div class="littleLogo desktopLogo">
+            <a href="index.html">
                 <img src="Assets/Images/littlelogo.png" alt="">
-            </div>
-            <div class="littleLogo mobileLogo">
+            </a>
+        </div>
+        <div class="littleLogo mobileLogo">
+            <a href="index.html">
                 <img src="Assets/Images/littlelogoblue.png" alt="">
-            </div>
-        </a>
+            </a>
+        </div>
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
                 <div class="hamburger"><div class="menuButton"></div></div>
@@ -46,9 +52,12 @@
     <div class="delimiter">
         <hr>
     </div>
-    <div class="content"> 
+    <div class="content">  
         <div class="cardList">
             
+        </div>
+        <div class="confirmOrder">
+            <a href="#" class="js-open-modal" data-modal="1">Оформити замовлення</a>
         </div>
     </div>
     <div class="delimiterMobile">
@@ -128,9 +137,5 @@
         </div>
      </div>
      <div class="overlay js-overlay-modal" id="overlay-modal"></div>
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="Assets/JavaScript/jquery.maskedinput.js"></script>
-     <script src="Assets/JavaScript/shopingcart.js"></script>
     </body>
 </html>

@@ -77,18 +77,48 @@
  }
  .js-open-modal {
     padding: 20px;
+    width: 40%;
+    text-align: center;
     display: inline-block;
     text-decoration: none;
-    background-color: #414b52;
-    margin: 10px;
-    color: #fff;
-    border-radius: 3px;
+    margin: 20px;
+    transition: .5s;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-size: 1.5rem;
  }
+
+ .js-open-modal:hover{
+     color: white;
+     background: var(--primary-color);
+ }
+
+ .delete-from-card{
+    color: red !important;
+}
 
  .modal.active,
 .overlay.active{
    opacity: 1;
    visibility: visible;
+}
+
+.ItemButtons button{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    padding: 3px;
+    margin-left: 2vw;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border: none;
+}
+
+.ItemButtons p{
+    font-size: 2rem;
+    margin-left: 2vw;
 }
 
 .emptyCard{
@@ -102,6 +132,24 @@
     text-align: center;
     font-size: 3rem;
     border: 3px solid var(--primary-color);
+}
+
+.fullCard{
+    margin-top: 70px;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid var(--primary-color);
+}
+
+.cardItem{
+    margin: 2%;
+    position: relative;
+}
+
+.cardItem img{
+    height: 25vh;
 }
 
 .emptyCard a{
@@ -122,6 +170,50 @@
     font-size: 1.5rem;
  }
 
+ .ItemButtons button{
+     transition: .5s;
+ }
+
+ .sum{
+    text-align: end;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 1.5rem;
+ }
+
+ .ItemButtons button:hover{
+     transform: scale(1.3);
+ }
+
+ .itemImgCard img{
+    margin-bottom: 10px;
+ }
+
+ .ItemAmountName{
+    position: absolute;
+    top: 0%;
+    font-size: 2rem;
+    left: 56%;
+    transform: translate(-50%, 0%);
+    color: var(--primary-color);
+}
+
+.ItemAmountCost{
+    left: 56%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -30%);
+}
+
+.ItemButtons{
+    display: inline-flex;
+    position: absolute;
+    bottom: 20%;
+    left: 54%;
+    transform: translate(-50%, 0px);
+}
+
  .confirmOrderButton{
      margin-top: 20px !important;
     margin-bottom: 20px !important;
@@ -136,6 +228,60 @@
     .confirmOrderButton button{
         font-size: 1.1rem;
         padding: 5px 5px;
+    }
+
+    .ItemAmountCost{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .ItemButtons{
+        display: inline-flex;
+        margin-bottom: 10px; 
+        margin-left: 46%;
+        transform: translate(-50%, 0px);
+    }
+
+    .ItemButtons button{
+        margin-left: 5vw;
+    }
+
+    .ItemButtons button{
+        font-size: 1.4rem;
+    }
+
+    .ItemButtons p{
+        font-size: 1.6rem;
+        margin-left: 5vw;
+    }
+
+    .sum{
+        font-size: 1.5rem;
+    text-align: end;
+    padding: 10px 20px;
+    }
+
+    .ItemAmountName{
+        font-size: 1.4rem;
+        text-align: center;
+        color: var(--primary-color);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cardItem img {
+        width: 90%;
+        margin-left: 5%;
+        min-height: 35vh;
+    }
+
+    .littleLogo img{
+        margin-top: -55px;
+    }
+
+    .js-open-modal{
+        width: 80%;
     }
 
     .modal__cross{
